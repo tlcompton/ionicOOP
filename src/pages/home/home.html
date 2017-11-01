@@ -1,14 +1,72 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Words
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-</ion-content>
+
+
+<ion-content>
+
+
+  <ion-list>
+
+    <ion-item-group>
+    <ion-item-divider color="light">
+      A
+    </ion-item-divider>
+    <ion-item *ngFor="let header of header1">
+      {{header.word}}
+    </ion-item>
+    </ion-item-group>
+
+    <ion-item-group>
+      <ion-item-divider color="light">
+        B
+      </ion-item-divider>
+
+      <ion-item *ngFor="let header of header2">
+        {{header.word}}
+      </ion-item>
+    </ion-item-group>
+
+    <ion-item-group>
+      <ion-item-divider color="light">
+        C
+      </ion-item-divider>
+
+      <ion-item *ngFor="let header of header3">
+        {{header.word}}
+      </ion-item>
+    </ion-item-group>
+
+    <ion-item-group>
+      <ion-item-divider color="light">
+        D
+      </ion-item-divider>
+
+      <ion-item *ngFor="let header of header4">
+        {{header.word}}
+      </ion-item>
+    </ion-item-group>
+
+  </ion-list>
+
+
+
+
+
+
+
+
+
+
+<!--<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      {{item.linkName}}
+    </ion-item>
+  </ion-list>
+</ion-content>-->
